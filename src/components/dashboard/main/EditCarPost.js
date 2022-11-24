@@ -28,7 +28,7 @@ const EditCarPost = ({
   const [imageIndex, setImageIndex] = useState(0);
   const [validateSending, setValidateSending] = useState("");
 
-  const server = "https://muddy-moth-top-hat.cyclic.app" ;
+  const server = process.env.SERVER ;
 
   let filteredCar = cars.filter((car) => car._id === selectedId);
 

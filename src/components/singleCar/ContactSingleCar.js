@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const ContactSingleCar = ({car}) => {
+  const server = process.env.SERVER
+
+  
   // states for Contact Form
 
   const [contactName, setContactName] = useState("");
@@ -34,7 +37,7 @@ const ContactSingleCar = ({car}) => {
     };
     
     axios
-      .post("https://muddy-moth-top-hat.cyclic.app/contact/car", fileContact)
+      .post(`${server}/contact/car`, fileContact)
       .then((response) => {
         console.log(response.data);
         setValidateSending(response.data);

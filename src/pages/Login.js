@@ -4,6 +4,9 @@ import { AuthContext } from "../context/auth.context";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const server = process.env.SERVER
+
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const { storeToken, authenticateUser } = useContext(AuthContext);
@@ -15,7 +18,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post("https://muddy-moth-top-hat.cyclic.app/admin/login", { identifier, password })
+      .post(`${server}/admin/login`, { identifier, password })
       .then((response) => {
         console.log("JWT token", response.data.authToken);
         storeToken(response.data.authToken);

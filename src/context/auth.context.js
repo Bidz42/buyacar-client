@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "https://muddy-moth-top-hat.cyclic.app" ;
+const API_URL = process.env.REACT_APP_API_URL || process.env.SERVER ;
  
 const AuthContext = createContext();
  
