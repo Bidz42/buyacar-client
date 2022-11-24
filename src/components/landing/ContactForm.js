@@ -26,7 +26,7 @@ const ContactForm = () => {
     };
 
     axios
-      .post("https://muddy-moth-top-hat.cyclic.app/contact", fileContact)
+      .post("http://localhost:5005/contact", fileContact)
       .then((response) => {
         console.log(response.data);
         setValidateSending(response.data);

@@ -34,7 +34,7 @@ const ContactSingleCar = ({car}) => {
     };
     
     axios
-      .post("https://muddy-moth-top-hat.cyclic.app/contact/car", fileContact)
+      .post("http://localhost:5005/contact/car", fileContact)
       .then((response) => {
         console.log(response.data);
         setValidateSending(response.data);
