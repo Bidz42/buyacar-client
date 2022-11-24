@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const server = process.env.SERVER ;
+  const server = "https://muddy-moth-top-hat.cyclic.app" ;
   const [number, setNumber] = useState(0)
   
   useEffect(() => {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const ContactSingleCar = ({car}) => {
-  const server = process.env.SERVER
+  const server = "https://muddy-moth-top-hat.cyclic.app"
 
   
   // states for Contact Form

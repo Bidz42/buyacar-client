@@ -3,7 +3,7 @@ import axios from "axios";
 
 const ContactForm = () => {
   
-  const server = process.env.SERVER
+  const server = "https://muddy-moth-top-hat.cyclic.app"
   
   // states for Contact Form
   const [contactName, setContactName] = useState("");

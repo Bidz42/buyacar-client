@@ -5,7 +5,7 @@ const Testimonial = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
 
-  const server = process.env.SERVER ;
+  const server = "https://muddy-moth-top-hat.cyclic.app" ;
 
   useEffect(() => {
     axios

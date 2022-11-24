@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from "react";
 import axios from "axios";
 
-const server =  process.env.SERVER ;
+const server =  "https://muddy-moth-top-hat.cyclic.app" ;
  
 const AuthContext = createContext();
  
