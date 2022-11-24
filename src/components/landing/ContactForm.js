@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
+  
+  const server = process.env.SERVER
+  
   // states for Contact Form
-
   const [contactName, setContactName] = useState("");
   const [contactLastName, setContactLastName] = useState("");
   const [contactEmail, setContactEmail] = useState("");
@@ -26,7 +28,7 @@ const ContactForm = () => {
     };
 
     axios
-      .post("http://localhost:5005/contact", fileContact)
+      .post(`${server}/contact`, fileContact)
       .then((response) => {
         console.log(response.data);
         setValidateSending(response.data);

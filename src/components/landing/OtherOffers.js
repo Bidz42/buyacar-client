@@ -17,7 +17,7 @@ const OtherOffers = ({ cars }) => {
 
       
       <div className="w-full flex flex-col lg:flex-row lg:flex-wrap lg:mx-40 justify-center ">
-      {cars.map((car) => {
+      {cars?.map((car) => {
         
         // Only Counter Number of Cars Visible
         counter++ 

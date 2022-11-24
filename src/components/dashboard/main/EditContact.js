@@ -9,7 +9,7 @@ const EditContact = ({
   refresh,
   setRefresh,
 }) => {
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
   const chosenMessage = contact.filter((message) => message._id === selectedId);
   const [enabled, setEnabled] = useState(chosenMessage[0].status);
 

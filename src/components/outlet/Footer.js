@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
   const [number, setNumber] = useState(0)
   
   useEffect(() => {
@@ -38,7 +38,7 @@ const Footer = () => {
             />
           </svg>
           <span className="hover:underline md:mr-6 mt-0.5 font-semibold text-gold">
-           {number}
+           {number} 
           </span>
         </li>
       </ul>

@@ -7,7 +7,7 @@ const BestOffer = () => {
   const [bestOffer, setBestOffer] = useState([]);
   const [bestOfferIndex, setBestOfferIndex] = useState(0);
 
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
 
   useEffect(() => {
     axios.get(`${server}/car/bestdeals`)

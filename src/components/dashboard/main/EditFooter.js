@@ -8,7 +8,7 @@ const EditFooter = ({
     }) => {
     const [phone, setPhone] = useState("")
     const [validateSending, setValidateSending] = useState("");
-    const server = "http://localhost:5005" ;
+    const server = process.env.SERVER ;
 
     
     useEffect(() => {

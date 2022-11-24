@@ -14,7 +14,7 @@ import {BsSquareFill} from 'react-icons/bs'
 
 
 const Cars = () => {
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
 
   const [cars, setCars] = useState([]);
 

@@ -12,21 +12,29 @@ const Header = () => {
               Welcome to P&P Exclusive Cars
             </h1>
             <h4 className="p-2 text-sm sm:text-base md:text-xl lg:text-2xl my-5">
-              We provide cars of the highest quality so do not hesitate to get
-              in touch and book a viewing now
+            Nous vous offrons un service de haute qualité avec un accompagnement de A à Z sur des véhicules haut de gamme
+            <br></br>
+            P&P Exclusive Car s'engage à être au plus proche de ses clients, répondre à leurs demandes et attentes les plus élevées en dénichant des véhicules à prix d'or.
+ 
+
             </h4>
             <p className="p-2 text-[0.6rem] sm:text-sm md:text-xl lg:text-lg">
-              fringilla ut morbi tincidunt augue interdum velit euismod in
-              pellentesque massa placerat duis ultricies lacus sed turpis
-              tincidunt id aliquet risus feugiat in ante metus dictum at tempor
-              commodo ullamcorper a lacus vestibulum sed arcu non odio euismod
-              lacinia at quis risus sed vulputate odio ut enim blandit volutpat
-              maecenas volutpat blandit aliquam etiam erat velit scelerisque in
-              dictum non consectetur a erat nam at lectus urna duis convallis
-              convallis tellus id interdum velit laoreet id donec ultrices
-              tincidunt arcu non sodales neque sodales ut etiam sit amet nisl
-              purus in mollis nunc sed id semper risus in hendrerit gravida
-              rutrum quisque non
+            
+            Il s'agit d'un accompagnement personnalisé qui se construit en toute confiance.
+            
+            <br />
+            
+            Nos services vous permettent à la fois de déposer votre véhicule puis trouver un acheteur, de le racheter directement ou encore de vous proposer des véhicules de qualité à des prix imbattables avec les meilleures options qui vous correspondent.
+  
+            <br />
+
+           Notre connaissance du marché, notre passion pour l'automobile et la relation humaine avec nos clients sont notre moteur pour vous offrir un service premium et une expérience unique.
+            
+            <br />
+  
+            N'hésitez pas à prendre contact avec nous et réserver un rendez-vous pour que nous puissions nous rencontrer. 
+
+ 
             </p>
           </div>
         </div>

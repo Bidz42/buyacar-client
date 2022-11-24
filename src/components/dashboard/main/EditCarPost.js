@@ -28,7 +28,7 @@ const EditCarPost = ({
   const [imageIndex, setImageIndex] = useState(0);
   const [validateSending, setValidateSending] = useState("");
 
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
 
   let filteredCar = cars.filter((car) => car._id === selectedId);
 

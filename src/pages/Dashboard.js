@@ -12,7 +12,7 @@ import {AiTwotonePhone} from "react-icons/ai"
 
 
 const Dashboard = () => {
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
 
   const [cars, setCars] = useState([]);
   const [testimonials, setTestimonials] = useState([]);

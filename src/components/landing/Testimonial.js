@@ -5,7 +5,7 @@ const Testimonial = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
 
-  const server = "http://localhost:5005" ;
+  const server = process.env.SERVER ;
 
   useEffect(() => {
     axios
